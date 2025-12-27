@@ -1,0 +1,36 @@
+// Dummy vehicle data to simulate Delhi <-> Uttarakhand private vehicle listings
+export const dummyVehicles = [
+  {
+    id: 'v1',
+    driverName: 'Ramesh Kumar',
+    phone: '+91-98765-43210',
+    vehicle: 'Toyota Innova Crysta',
+    seats: 5,
+    route: 'Delhi → Dehradun',
+    date: '2025-12-24',
+    price: 3500,
+    notes: 'AC, luggage space available',
+  },
+  {
+    id: 'v2',
+    driverName: 'Sita Devi',
+    phone: '+91-91234-56789',
+    vehicle: 'Mahindra Scorpio',
+    seats: 6,
+    route: 'Dehradun → Delhi',
+    date: '2025-12-25',
+    price: 4000,
+    notes: 'Good for groups, driver is experienced',
+  },
+  {
+    id: 'v3',
+    driverName: 'Amit Sharma',
+    phone: '+91-99887-66554',
+    vehicle: 'Honda Amaze',
+    seats: 4,
+    route: 'Delhi → Rishikesh',
+    date: '2025-12-24',
+    price: 3000,
+    notes: 'Economical, non-AC',
+  },
+]
