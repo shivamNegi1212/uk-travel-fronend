@@ -2,10 +2,11 @@ services:
   - type: web
     name: uk-travel-frontend
     env: node
+    nodeVersion: 20.10.0
     region: oregon
     plan: free
     buildCommand: npm install && npm run build
-    startCommand: npx serve -s dist -l 3000
+    startCommand: npm start
     envVars:
       - key: NODE_ENV
         value: production
