@@ -2,14 +2,17 @@ services:
   - type: web
     name: uk-travel-frontend
     env: node
-    rootDir: frontend
+    rootDir: frontend/
     nodeVersion: 18.20.2
     region: oregon
     plan: free
-    buildCommand: npm install && npm run build
-    startCommand: npm start
+    buildCommand: cd frontend && npm install && npm run build
+    startCommand: cd frontend && npm start
+    publishDir: frontend/dist
     envVars:
       - key: NODE_ENV
         value: production
       - key: VITE_API_URL
         value: https://uk-travel-backend.onrender.com/api
+      - key: PORT
+        value: 3000
