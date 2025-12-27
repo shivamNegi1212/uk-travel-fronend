@@ -2,6 +2,7 @@ services:
   - type: web
     name: uk-travel-frontend
     env: node
+    rootDir: frontend
     nodeVersion: 18.20.2
     region: oregon
     plan: free
