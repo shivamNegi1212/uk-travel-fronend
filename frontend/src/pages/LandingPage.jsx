@@ -1,5 +1,6 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
+import logo from '../assets/logo.png'
 
 export default function LandingPage() {
   const navigate = useNavigate()
@@ -7,14 +8,10 @@ export default function LandingPage() {
   return (
     <div className="min-h-screen bg-white">
       {/* Simple Header */}
-      <div className="bg-white border-b border-gray-200 py-5">
-        <div className="max-w-7xl mx-auto px-4 flex items-center justify-between">
+      <div className="bg-white border-b border-gray-200">
+        <div className="max-w-7xl mx-auto px-4 flex items-center justify-between h-20">
           <div className="flex items-center gap-3">
-            <div className="text-3xl">🚗</div>
-            <div>
-              <h1 className="text-2xl font-bold text-gray-900">Jay Uttarakhand</h1>
-              <p className="text-xs text-gray-500">Ride Sharing Made Easy</p>
-            </div>
+            <img src={logo} alt="Jay Uttarakhand Logo" className="w-44" style={{height: 'auto'}} />
           </div>
           <p className="hidden md:block text-sm text-gray-600">Safe • Affordable • Reliable</p>
         </div>
@@ -26,7 +23,7 @@ export default function LandingPage() {
         <div className="bg-blue-50 p-8 md:p-12 flex flex-col justify-between">
           {/* Driver Header */}
           <div className="mb-10">
-            <div className="text-6xl mb-6">🚙</div>
+            <img src={logo} alt="Driver" className="h-16 w-16 mb-6" />
             <h2 className="text-3xl font-bold text-gray-900 mb-2">Be a Driver</h2>
             <p className="text-gray-600">Earn money by sharing your rides</p>
           </div>
@@ -34,7 +31,7 @@ export default function LandingPage() {
           {/* Features List */}
           <div className="space-y-3 mb-10">
             <div className="flex items-start gap-3">
-              <span className="text-2xl">🚗</span>
+              <img src={logo} alt="Create Rides" className="h-6 w-6 mt-1" />
               <div>
                 <h4 className="font-semibold text-gray-900">Create Rides</h4>
                 <p className="text-sm text-gray-600">List your rides and find passengers</p>

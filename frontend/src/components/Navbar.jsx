@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import { useAuth } from '../context/AuthContext'
+import logo from '../assets/logo.png'
 
 /*
   Navbar: Navigation bar with conditional driver and passenger actions
@@ -24,9 +25,7 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link to="/" className="text-white font-bold text-xl md:text-2xl flex items-center gap-2">
-            <span className="text-2xl">🚗</span>
-            <span className="hidden sm:inline">Jay Uttarakhand</span>
-            <span className="sm:hidden">JU</span>
+            <img src={logo} alt="Jay Uttarakhand Logo" className="w-32 md:w-44" style={{height: 'auto'}} />
           </Link>
 
           {/* Desktop Navigation */}
